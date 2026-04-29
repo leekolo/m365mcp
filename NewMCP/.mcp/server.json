@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "description": "MCP server with Microsoft 365 email integration via Graph API",
+  "name": "DLee.MyMCP",
+  "version": "0.1.0-beta",
+  "packages": [
+    {
+      "registryType": "nuget",
+      "identifier": "DLee.MyMCP",
+      "version": "0.1.0-beta",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [],
+      "environmentVariables": [
+        {
+          "name": "AZURE_TENANT_ID",
+          "description": "Azure AD tenant ID for Microsoft 365 authentication"
+        },
+        {
+          "name": "AZURE_CLIENT_ID",
+          "description": "Azure AD app registration client ID"
+        },
+        {
+          "name": "AZURE_CLIENT_SECRET",
+          "description": "Azure AD app registration client secret"
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/<your GitHub username here>/<your repo name>",
+    "source": "github"
+  }
+}

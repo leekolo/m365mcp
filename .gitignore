@@ -1,0 +1,18 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.nupkg
+*.snupkg
+TestResults/
+
+# Worktrees
+.worktrees/
+
+# Temp files
+temp_docx/
+docx_content.txt
+extract_docx.ps1
+extract_temp.ps1
