@@ -16,7 +16,6 @@ builder.Services.AddSingleton<OAuthAuthenticationService>();
 builder.Services
     .AddMcpServer()
     .WithStdioServerTransport()
-    .WithTools<RandomNumberTools>()
     .WithTools<EmailTools>()
     .WithTools<SharePointTools>();
 
